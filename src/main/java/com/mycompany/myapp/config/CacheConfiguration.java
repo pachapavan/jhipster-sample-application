@@ -40,6 +40,30 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Staff.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Staff.class.getName() + ".salaries");
+            createCache(cm, com.mycompany.myapp.domain.Staff.class.getName() + ".teachers");
+            createCache(cm, com.mycompany.myapp.domain.Student.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Student.class.getName() + ".classes");
+            createCache(cm, com.mycompany.myapp.domain.Student.class.getName() + ".markes");
+            createCache(cm, com.mycompany.myapp.domain.Student.class.getName() + ".attendences");
+            createCache(cm, com.mycompany.myapp.domain.Student.class.getName() + ".fees");
+            createCache(cm, com.mycompany.myapp.domain.Student.class.getName() + ".busRouteNames");
+            createCache(cm, com.mycompany.myapp.domain.ClassName.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.ClassName.class.getName() + ".sections");
+            createCache(cm, com.mycompany.myapp.domain.Section.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Subject.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.StudentMarkes.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.StudentMarkes.class.getName() + ".subjects");
+            createCache(cm, com.mycompany.myapp.domain.StudentMarkes.class.getName() + ".classes");
+            createCache(cm, com.mycompany.myapp.domain.Attendence.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.StudentFee.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.BusRoute.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.BusRoute.class.getName() + ".busRoutes");
+            createCache(cm, com.mycompany.myapp.domain.BusRoute.class.getName() + ".busStops");
+            createCache(cm, com.mycompany.myapp.domain.BusRouteName.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.BusStops.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.StaffSalary.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
