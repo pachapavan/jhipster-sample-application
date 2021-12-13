@@ -13,6 +13,7 @@ import org.springframework.context.annotation.*;
 @Configuration
 @EnableCaching
 public class CacheConfiguration {
+
     private final javax.cache.configuration.Configuration<Object, Object> jcacheConfiguration;
 
     public CacheConfiguration(JHipsterProperties jHipsterProperties) {
@@ -40,6 +41,37 @@ public class CacheConfiguration {
             createCache(cm, com.mycompany.myapp.domain.User.class.getName());
             createCache(cm, com.mycompany.myapp.domain.Authority.class.getName());
             createCache(cm, com.mycompany.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.mycompany.myapp.domain.Page.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Page.class.getName() + ".genericObjectsLists");
+            createCache(cm, com.mycompany.myapp.domain.Page.class.getName() + ".flexBoxes");
+            createCache(cm, com.mycompany.myapp.domain.Spacing.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Spacing.class.getName() + ".margins");
+            createCache(cm, com.mycompany.myapp.domain.Spacing.class.getName() + ".paddings");
+            createCache(cm, com.mycompany.myapp.domain.FlexBox.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.FlexBox.class.getName() + ".elements");
+            createCache(cm, com.mycompany.myapp.domain.Attributes.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Elements.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Elements.class.getName() + ".elements");
+            createCache(cm, com.mycompany.myapp.domain.Button.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Text.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Table.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Head.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Head.class.getName() + ".labels");
+            createCache(cm, com.mycompany.myapp.domain.Label.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Label.class.getName() + ".objectContainingStrings");
+            createCache(cm, com.mycompany.myapp.domain.Body.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Body.class.getName() + ".tabelValues");
+            createCache(cm, com.mycompany.myapp.domain.TabelValues.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.TabelValues.class.getName() + ".objectContainingStrings");
+            createCache(cm, com.mycompany.myapp.domain.TabelValues.class.getName() + ".displayAtts");
+            createCache(cm, com.mycompany.myapp.domain.DisplayAtt.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.DisplayAtt.class.getName() + ".badgeTypes");
+            createCache(cm, com.mycompany.myapp.domain.BadgeType.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.FormWrap.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Badge.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Icon.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.Image.class.getName());
+            createCache(cm, com.mycompany.myapp.domain.ObjectContainingString.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
